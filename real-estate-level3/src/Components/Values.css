@@ -1,0 +1,8 @@
+.semi-circle-container{
+    height: 70vh;
+    overflow: hidden;
+}
+.semi-circle-image{
+    width: 100%;
+    border-radius: 50% 50% 0 0;
+}
