@@ -1,24 +1,27 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
-const dotenv = require("dotenv")
 require('dotenv').config();
-const app = express();
+const app = express();``
 const port = process.env.PORT
-import { userRoute } from "./route/userRoute";
 
 
 
 //MIDDLEWARES
+app.use(express.urlencoded({extended:true}))
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors());
 
 
+const userRoute = require("../Server/route/userRoute");
+const residencyRoute = require("../Server/route/residencyRoute");
 
 
 
 app.use("/api/user", userRoute)
+
+app.use("/api/residency", residencyRoute)
 
 
 
