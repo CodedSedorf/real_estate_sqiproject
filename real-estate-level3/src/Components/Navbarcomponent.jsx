@@ -27,7 +27,7 @@ const Navbarcomponent = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a className="bg-secondary">Residencies</a>
+                <a href="/residency" className="bg-secondary">Residencies</a>
               </li>
               <li>
                 <a>Our Values</a>
@@ -42,7 +42,7 @@ const Navbarcomponent = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Residencies</a>
+              <a href="/residency" className="no-underline">Residencies</a>
             </li>
             <li>
               <a>Our Values</a>
